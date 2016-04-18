@@ -28,7 +28,6 @@ public class _9_TicTakToe {
 		String majorRight = "";
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array.length; j++) {
-				System.out.print("asd ");
 				if (array[i][j] == " ") {
 					noSpaces = false;
 				}
