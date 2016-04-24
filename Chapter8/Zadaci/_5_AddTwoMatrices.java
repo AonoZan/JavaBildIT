@@ -1,5 +1,7 @@
-
-public class _6_MultiplyTwoMatrices2 {
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
+public class _5_AddTwoMatrices {
 	public static java.util.Scanner unos = new java.util.Scanner(System.in);
 	public static void closeScanner(){unos.close();};
 	public static void inputArray(double[][] array){
@@ -13,7 +15,7 @@ public class _6_MultiplyTwoMatrices2 {
 		double[][] newArray = new double[array1.length][array1[0].length];
 		for (int i = 0; i < newArray.length; i++) {
 			for (int j = 0; j < newArray[i].length; j++) {
-				newArray[i][j] = array1[i][j] * array2[i][j];
+				newArray[i][j] = array1[i][j] + array2[i][j];
 			}
 		}
 		return newArray;
@@ -23,13 +25,13 @@ public class _6_MultiplyTwoMatrices2 {
 			for (int j = 0; j < array1[i].length + array2[i].length + arraySum[i].length; j++) {
 				String fix = "    ";
 				if (j<array1[i].length) {
-					System.out.printf("%.2f", array1[i][j%3]);
+					System.out.print(array1[i][j%3]);
 				}else if (j<array1[i].length+array2[i].length) {
-					if (j == array1[i].length) {if (i == 1) {fix = " *  ";}System.out.print(fix);}
-					System.out.printf("%.2f", array2[i][j%3]);
+					if (j == 3) {if (i == 1) {fix = " +  ";}System.out.print(fix);}
+					System.out.print(array2[i][j%3]);
 				}else {
-					if (j == array1[i].length+array2[i].length) {if (i == 1) {fix = " =  ";}System.out.print(fix);}
-					System.out.printf("%.2f", arraySum[i][j%3]);
+					if (j == 6) {if (i == 1) {fix = " =  ";}System.out.print(fix);}
+					System.out.print(arraySum[i][j%3]);
 				}
 				System.out.print(" ");
 			}
@@ -50,14 +52,12 @@ public class _6_MultiplyTwoMatrices2 {
 		double[][] matrix1 = new double[3][3];
 		double[][] matrix2 = new double[3][3];
 		System.out.print("Enter matrix1: ");
-//		inputArray(matrix1);
-		Inputs.genRand(matrix1, 0, 10);
+		inputArray(matrix1);
 		System.out.print("Enter matrix2: ");
-//		inputArray(matrix2);
-		Inputs.genRand(matrix2, 0, 10);
+		inputArray(matrix2);
 		double[][] sumArray = addTwo(matrix1, matrix2);
 //		Inputs.printArray(sumArray);
-		System.out.println("The multiplication of the matrices is");
+		System.out.println("The matrices are added as folows");
 		printAddArray(matrix1, matrix2, sumArray);
 	}
 

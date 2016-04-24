@@ -1,3 +1,6 @@
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class _4_WeeklyHours {
 	public static int sum(int[] array){
 		int sum = 0;

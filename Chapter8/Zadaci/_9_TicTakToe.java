@@ -1,4 +1,6 @@
-
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class _9_TicTakToe {
 	public static boolean gameOver = false;
 	public static String winner = "";
@@ -87,18 +89,13 @@ public class _9_TicTakToe {
 		System.out.printf("-------------\n");
 	}
 	public static void playGame(){
-		
-		
-		
-		printScreen(inputs);
-		if (gameOver) {return;}
-		gameOver = GameFinished(inputs);
-		userMove(inputs, "O");
-		
-		printScreen(inputs);
-		if (gameOver) {return;}
-		gameOver = GameFinished(inputs);
-		userMove(inputs, "O");
+		String[] players = {"X", "O"};
+		for (String player : players) {
+			printScreen(inputs);
+			gameOver = GameFinished(inputs);
+			if (gameOver) {return;}
+			userMove(inputs, player);
+		}
 		
 	}
 	public static void main(String[] args) {

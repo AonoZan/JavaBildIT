@@ -1,4 +1,6 @@
-
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class _10_LaggestInRowCol {
 	public static void genRandom(int[][] array, int from, int to){
 		for (int i = 0; i < array.length; i++) {

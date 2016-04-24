@@ -1,4 +1,6 @@
-
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class _1_SumColumns {
 	public static java.util.Scanner unos = new java.util.Scanner(System.in);
 	public static void closeScanner(){unos.close();};

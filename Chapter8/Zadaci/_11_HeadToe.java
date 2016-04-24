@@ -1,3 +1,6 @@
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class _11_HeadToe {
 	public static void printArray(int[][] array){
 		for (int i = 0; i < array.length; i++) {

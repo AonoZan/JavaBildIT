@@ -1,4 +1,6 @@
-
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class _7_FindShortest3DSpace {
 	public static double distance(double[] p1, double[] p2){
 		return Math.sqrt(Math.pow((p2[0] - p1[0]), 2) + Math.pow((p2[1] - p1[1]), 2) + Math.pow((p2[2] - p1[2]), 2));

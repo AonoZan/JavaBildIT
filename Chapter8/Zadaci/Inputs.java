@@ -1,3 +1,6 @@
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class Inputs {
 // globalna varijabla input koja predstavlja scanner i metoda za zatvaranje scanner-a
 //--------------------------------------------

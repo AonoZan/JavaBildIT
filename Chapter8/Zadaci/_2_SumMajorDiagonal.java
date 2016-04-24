@@ -1,4 +1,6 @@
-
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class _2_SumMajorDiagonal {
 	public static java.util.Scanner unos = new java.util.Scanner(System.in);
 	public static void closeScanner(){unos.close();};
