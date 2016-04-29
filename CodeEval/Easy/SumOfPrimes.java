@@ -1,6 +1,3 @@
-/**@autor AonoZan Dejan Petrovic 2016 ©
- */
-
 public class SumOfPrimes {
 	// method for checking if number is prime
 	public static boolean isPrime(int number){
