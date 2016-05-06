@@ -1,0 +1,53 @@
+	QuadraticEquation
+
+ - a: int
+ - b: int
+ - c: int
+ 
+ QuadraticEquation(a: int, b: int, c: int)
+ 
+ + getA(): int
+ + getB(): int
+ + getC(): int
+ 
+ getDiscriminant(): double
+ 
+ getRoot1(): double
+ getRoot2(): double
+ 
+------------------------------------
+	LinearEquation
+
+ - a: int
+ - b: int
+ - c: int
+ - d: int
+ - e: int
+ - f: int
+
+ LinearEquation(a: double
+ 				b: double
+ 				c: double
+ 				d: double
+ 				e: double
+ 				f: double)
+
+ + isSolvable()
+ + getX()
+ + getY()
+
+	MyCalendar
+
+ - day: int
+ - month: int
+ - year: int
+ 
+ MyCalendar()
+ 
+ + getDay(): int
+ + getMonth(): int
+ + getYear(): int
+ 
+ + elapseDate(milliseconds: long): void
+ + toString(): String
+ 
