@@ -1,0 +1,61 @@
+	Person
+
+ - name: String
+ - address: String
+ - phone: String
+ - email: String
+
+
+ Person()
+ Person(name: String, address: String)
+ Person(name: String, address: String, phone: String, email: String)
+ 
+ + toString(): String
+
+--------------------------------------------------------------------
+
+	Student extends Person
+
+ - STATUS: String
+ 
+ Student()
+ Student(STATUS: String)
+
+ + toDtring(): String
+
+--------------------------------------------------------------------
+
+	Employee extends Person
+
+ - office: int
+ - salary: double
+ - dateHired: Date
+
+ Employee()
+ Employee(office: int, salary: double)
+ Employee(office: int, salary: double, dateHired: Date)
+
+ + toString(): String
+
+--------------------------------------------------------------------
+ 
+	Faculty extends Employee
+
+ - officeHours: int
+ - rank: int
+
+ Faculty()
+ Faculty(officeHours: int, rank: int)
+
+ + toString(): String
+
+--------------------------------------------------------------------
+
+	Staff extends Employee
+
+ - title: String
+
+ Staff()
+ Staff(title: String)
+
+ + toString(): String
