@@ -1,0 +1,97 @@
+_________________________________________________
+	Stopwatch
+
+ - startTime: long
+ - endTime: long
+ 
+ Stopwatch()
+ 
+ + getStartTime(): long
+ + getEndTime(): long
+ 
+ + start(): void
+ + stop(): void
+ + getElapsedTime(): String
+
+_________________________________________________
+	Time
+
+ - hour: long
+ - minutes: long
+ - seconds: long
+ 
+ 
+ + Time()
+ + Time(elapsedTime: long)
+ + Time(hour: long, minutes: long, seconds: long)
+ 
+ + getHour(): long
+ + getMinutes(): long
+ + getSeconds(): long
+ 
+ + setTime(elapseTime: long): void
+
+_________________________________________________
+	Account
+
+ - id: int
+ - balance: double
+ - annualInterestRate: double (static)
+ - dateCreated: Date
+ 
+ Account()
+ Account(id: int, balance: double)
+ 
+ + setAnnualInterestRate(rate: double): void
+ 
+ + getId(): int
+ + getBalance(): double
+ + getAnnualInterestRate(): double (static)
+ + getDateCreated(): Date
+
+ + getMonthlyInterestRate(): double
+ + getMonthlyInterest(): double
+
+ + withdraw(amount: double): void
+ + deposit(amount: double): void
+
+_________________________________________________
+	MyInteger
+
+ - value: int
+ 
+ MyInteger(value: int)
+ 
+ + getValue(): int
+ 
+ + isEven(): boolean
+ + isOdd(): boolean
+ + isPrime(): boolean
+ 
+ + isEven(value: MyInteger): boolean (static)
+ + isOdd(value: MyInteger): boolean (static)
+ + isPrime(value: MyInteger): boolean (static)
+ 
+ + equals(value: int)
+ + equals(value: MyInteger)
+ 
+ + parseInt(array: char[]): int
+ + parseInt(array: String): int
+ 
+ _________________________________________________
+ 	MyDate
+
+ - year: int
+ - month: int
+ - day: int
+ 
+ MyDate()
+ MyDate(elapsedTime: long)
+ MyDate(year: int, month: int, day: int)
+ 
+ + getYear(): int
+ + getMonth(): int
+ + getDay(): int
+ 
+ + setDate(elapsedTime: long): void
+ 

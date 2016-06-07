@@ -1,0 +1,111 @@
+	QuadraticEquation
+
+ - a: int
+ - b: int
+ - c: int
+ 
+ QuadraticEquation(a: int, b: int, c: int)
+ 
+ + getA(): int
+ + getB(): int
+ + getC(): int
+ 
+ getDiscriminant(): double
+ 
+ getRoot1(): double
+ getRoot2(): double
+ 
+------------------------------------
+	LinearEquation
+
+ - a: int
+ - b: int
+ - c: int
+ - d: int
+ - e: int
+ - f: int
+
+ LinearEquation(a: double
+ 				b: double
+ 				c: double
+ 				d: double
+ 				e: double
+ 				f: double)
+
+ + isSolvable()
+ + getX()
+ + getY()
+
+	MyCalendar
+
+ - day: int
+ - month: int
+ - year: int
+ 
+ MyCalendar()
+ 
+ + getDay(): int
+ + getMonth(): int
+ + getYear(): int
+ 
+ + elapseDate(milliseconds: long): void
+ + toString(): String
+ 
+ ------------------------------------
+ 
+ 	Utakmica
+
+ - domaciTim: String
+ - gostujuciTim: String
+ - brojPosjetilaca: int
+ - cijenaKarata: double
+ - rezultat: String
+ 
+ Utakmica()
+ 
+ getters & setters...
+ 
+ + ispisStanjaUtakmice(): void
+ + izracunajZaraduOdProdatihKarata(): double
+ + ispisZaradeOdProdatihKarata: void
+ 
+ ------------------------------------
+	Mobitel
+
+ - proizvodjac: String
+ - model: String
+ - brzinaProcesora: double
+ - brojJezgriProcesora: int
+ - kolicinaMemorije: int
+ - kolicinaRamMemorije: int
+ - brojMegapikselaKamere: double
+ - nizInstaliranihAplikacija: String[] <20
+ 
+ Mobitel()
+ 
+ + ispisiSpecifikaciju(): void
+ + instalirajAplikaciju(aplikacija: String): boolean
+ + obrisiAplikaciju(aplikacija: String): boolean
+ + ispisiInstaliraneAplikacije(): void
+ + ubaciSDKarticu(memorijska: int): void
+ 
+ ------------------------------------
+ 	Raspored
+
+  - ponedeljak: int
+  - utorak: int
+  - srjeda: int
+  - cetvrtak: int
+  - petak: int
+  - subota: int
+  - nedjelja: int
+  
+  Raaspored()
+  
+  + unesiCasove(): void
+  + unesiCasove(dan: int): void
+  + unesiCasove(dan: int, cas: int): void
+  + prikaziCasove(): void
+  + prikaziCasove(dan: int): void
+  + prikaziCasove(dan: int, cas: int): void
+ 
