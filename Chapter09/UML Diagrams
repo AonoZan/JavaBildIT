@@ -1,0 +1,137 @@
+	Rectangle
+
+ - width: double
+ - height: double
+ 
+ Rectangle()
+ Rectangle(width: double, height: double)
+ 
+ + getArea(): double
+ + getPerimeter(): double
+ 
+ + toString(): String
+ ----------------------------------------
+	Stock
+
+ - symbol: String
+ - name: String
+ - previousClosingPrice: double
+ - currentPrice: double
+ 
+ Stock(symbol: String, name: String)
+ 
+ + setPreviousClosingPrice(): void
+ + secCurrentPrice(): void
+ 
+ + getChangePercent(): double int
+ ----------------------------------------
+ 	Stopwarch
+
+ - startTime: long
+ - endTime: long
+ 
+ Stopwatch()
+ 
+ + start(): void
+ + stop(): void
+ + getElapsedTime(): long
+ ----------------------------------------
+ 	Account
+
+ - id: int
+ - balance: double
+ - annualInterestRate: double
+ - date: String
+ 
+ Account()
+ Account(id: int, balance: double)
+ 
+ + setId(): void
+ + setBalance(): void
+ + setAnnualInterestRate(): void
+ 
+ + getId(): int
+ + getBalance(): double
+ + getAnnualInterestRate(): double
+ 
+ + getDateCreated(): String
+ + getMonthlyInterestRate(): double
+ + getMonthlyInterest(): double
+ + withdraw(amount: double): void
+ + deposit(amount: double): void
+ 
+ ----------------------------------------
+	Fan
+
+ + SLOW: int = 1
+ + MEDIUM: int = 2
+ + FAST: int = 3
+ - speed: int = SLOW
+ - on: boolean = false
+ - radius: double = 5
+ - color: String = "blue"
+ 
+ Fan()
+ 
+ + getSpeed(): int
+ + getOn(): boolean
+ + getRadius(): double
+ + getColor(): String
+ 
+ + setSpeed(speed: int): void
+ + setOn(state: boolean): void
+ + setRadius(radius: double): void
+ + setColor(color: String): void
+ 
+ + toString(): String
+ ----------------------------------------
+ 	Geometry
+
+ - n: int = 3
+ - side: double = 1
+ - x: double = 0
+ - y: double = 0
+ 
+ Geometry()
+ Geometry(n: int, side: double)
+ Geometry(n: int, side: double, x: double, y: double)
+ 
+ + getN(): int
+ + getSide(): double
+ + getX(): double
+ + getY(): double
+ 
+ + getPrimeter(): double
+ + getArea(): double
+ 
+ n * pow(s, 2) / 4 * tan(PI / n)
+ ----------------------------------------
+ 	QuadraticEquation
+
+ - a: double
+ - b: double
+ - c: double
+ 
+ QuadraticEquation(a: double, b: double, c: double)
+ 
+ + getA(): double
+ + getB(): double
+ + getC(): double
+ 
+ + getDiscriminant(): double
+ + getRoot1(): double
+ + getRoot2(): double
+ 
+ ----------------------------------------
+ ----------------------------------------
+ 	Location
+
+ + row: int
+ + column: int
+ + maxValue: double
+ 
+ Location()
+ ----------------------------------------
+ ----------------------------------------
+ ----------------------------------------
+ ----------------------------------------

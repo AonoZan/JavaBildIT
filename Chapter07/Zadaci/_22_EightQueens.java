@@ -1,5 +1,5 @@
 /**
- * @autor Dejan Petrovic 2016
+ * @autor AonoZan Dejan Petrovic 2016
  */
 public class _22_EightQueens {
 	// method that fills array with provided default values
@@ -53,7 +53,7 @@ public class _22_EightQueens {
 					}
 					solutions++;												// count number of solutions for current line
 					if (rightSpot) {table[x][y] = 'Q';}							// if we have right spot, land queen
-				} while (!rightSpot && solutions < 200);						// if we don't have right spot try again until number of solutions reaches 200
+				} while (!rightSpot && solutions < tableSize * 64);						// if we don't have right spot try again until number of solutions reaches 200
 				if (solutions >= 200) {found = false; break;}else solutions = 0;// if number of solutions for given line is 200(or more)
 			}																	// we haven't started correct combination, restart and try again
 																				// else we have found correct position and restart number of solutions

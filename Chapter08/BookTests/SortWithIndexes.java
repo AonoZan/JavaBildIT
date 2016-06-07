@@ -1,4 +1,6 @@
-
+/**
+ * @autor AonoZan Dejan Petrovic 2016
+ */
 public class SortWithIndexes {
 	
 	public static void main(String[] args) {

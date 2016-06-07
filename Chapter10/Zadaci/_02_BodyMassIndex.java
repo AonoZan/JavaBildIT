@@ -20,6 +20,8 @@ public class _02_BodyMassIndex {
 	private double weight;
 	private double feet;
 	private double inches;
+	public static final double KILOGRAMS_PER_POUND = 0.45359237;
+	public static final double METERS_PER_INCH = 0.0254;
 	
 	_02_BodyMassIndex(String name, int age, double weight, double feet, double inches) {
 		this.name = name;
@@ -30,7 +32,9 @@ public class _02_BodyMassIndex {
 	}
 	
 	public double getBMI() {
-		return this.weight / ((this.feet + this.inches/100) * (this.feet + this.inches/100));
+//		double bmi = this.weight * KILOGRAMS_PER_POUND / ((this.feet+this.inches * METERS_PER_INCH) * (this.feet+this.inches * METERS_PER_INCH));
+//		return bmi; //Math.round(bmi * 100) / 100.0;
+		return Math.round(this.weight / ((this.feet + this.inches/100) * (this.feet + this.inches/100)));
 	}
 	public String getStatus() {
 		if (getBMI() < 18.5) {
