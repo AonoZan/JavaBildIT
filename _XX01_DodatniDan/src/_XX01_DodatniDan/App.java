@@ -62,6 +62,7 @@ public class App {
 		default:
 			break;
 		}
+		unos.close();
 	}
 	
 }

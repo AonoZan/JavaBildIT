@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _4_AreaOfHexagon {
+public class _01_AreaOfPentagon {
 
 	public static void main(String[] args) {
 		// create a scanner
@@ -12,8 +12,8 @@ public class _4_AreaOfHexagon {
 		// close scanner
 		unos.close();
 		
-		double side = ( 2 * length) * Math.sin(Math.PI/6);
-		double area = (6 * Math.pow(side, 2)) / (4 * Math.tan(Math.PI/6));
+		double side = ( 2 * length) * Math.sin(Math.PI/5);
+		double area = (5 * Math.pow(side, 2)) / (4 * Math.tan(Math.PI/5));
 		
 		System.out.printf("\nThe area of pentagon is: %f", area);
 		 

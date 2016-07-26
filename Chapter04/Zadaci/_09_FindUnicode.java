@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _9_FindUnicode {
+public class _09_FindUnicode {
 
 	public static void main(String[] args) {
 		// create scanner
@@ -16,7 +16,7 @@ public class _9_FindUnicode {
 		unos.close();
 
 		// calculate
-		System.out.printf("The unicode for character %c is %d.", character, (int)character);
+		System.out.printf("The unicode for character %c is %d. %d", character, (int)character);
 
 	}
 
